@@ -1,0 +1,9 @@
+#Timer
+	scoreboard players set Second EF_Timer 0
+	scoreboard players add Minute EF_Timer 1
+	execute if score Minute EF_Timer matches 60.. run function energy_flux:tick_minute
+
+#Transfert	
+	tag @e[type=minecraft:armor_stand,tag=EF_CanSend] add EF_WillSend
+	tag @e[type=minecraft:armor_stand,tag=EF_HasReceived] remove EF_HasReceived
+	execute as @e[type=minecraft:armor_stand,tag=EF_WillSend,tag=EF_Use,tag=!EF_CanReceive,scores={EF_Joule=1..},sort=random] at @s run function energy_flux:send/start
