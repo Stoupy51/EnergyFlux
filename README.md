@@ -1,4 +1,5 @@
 # Energy Flux - Minecraft API
+[Don't forget to join the Discord if you are a User or a Creator of Datapacks : https://discord.gg/a2yX6GD4J7]
 
 This Datapack is an API to use if you want to create Industrial Datapacks.
 It will create the energy system and will do the transferts for you.
