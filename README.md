@@ -7,6 +7,7 @@ It will create the energy system and will do the transferts for you.
 Here is a tutorial to "how to implement" :
 - Tags : x
 - Scores : x
+Tutorial video : Coming soon
 
 Also, there is an example of Datapack that use the Energy Flux API : https://github.com/Stoupy51/SimplEnergy
 You can copy it to get a good start if you want to add your customs items using energy.
