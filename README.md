@@ -10,6 +10,7 @@ Here is a tutorial to "how to implement" : <video link comming soon>
   - "EF_Use" (Always Required) to know what entities use the API
   - "EF_CanReceive", if this machine can receive Energy
   - "EF_CanSend", if this machine can send Energy
+  
   For example, if I want to create a generator, I will summon it with "Tags:["EF_Use","EF_CanSend"]"
   
   For a energy consumer like an Electric Furnace : "Tags:["EF_Use","EF_CanReceive"]"
@@ -19,6 +20,7 @@ Here is a tutorial to "how to implement" : <video link comming soon>
   - "EF_Watt", transfert speed for wires BUT generation or energy consumption.
   - "EF_EnergyStorage", max amount of energy
   - "EF_Joule", current energy stored (Need to be 0 by default, not null)
+  
   For example, a generator can have EF_Watt=10, EF_Joule=0, EF_EnergyStorage=800
   
   For an energy consummer : EF_Watt=10, EF_Joule=0, EF_EnergyStorage=800
