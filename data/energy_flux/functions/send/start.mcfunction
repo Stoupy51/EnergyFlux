@@ -11,13 +11,12 @@ tag @s remove EF_WillSend
         function energy_flux:send/checkspeeds/1
 
     #Start checking connectivity
-        scoreboard players operation @s EF_MaxSpeed = @e[type=minecraft:glow_item_frame,tag=EF_Faster] EF_Watt
+        scoreboard players operation @s EF_MaxSpeed = @e[type=minecraft:glow_item_frame,tag=EF_Faster,limit=1] EF_Watt
         execute as @e[type=minecraft:glow_item_frame,tag=!EF_Connected,tag=EF_Wire,tag=EF_Faster] at @s run function energy_flux:send/found/samewire
 
     #Ram clear
-        scoreboard players reset @s EF_MaxSpeed
         scoreboard players reset Fastest EF_Temp
-        scoreboard players reset @e[type=minecraft:glow_item_frame,tag=EF_Wire] EF_MaxSpeed
+        scoreboard players reset * EF_MaxSpeed
         tag @e[type=minecraft:glow_item_frame,tag=EF_Wire] remove EF_Connected
         tag @e[type=minecraft:glow_item_frame,tag=!EF_Wire] remove EF_PreviousChecked
         tag @s remove EF_Connected
