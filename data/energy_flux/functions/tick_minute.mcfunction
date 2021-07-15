@@ -1,1 +1,1 @@
-scoreboard players set Minute EF_Timer 0
+scoreboard players set Minute EF_Data 0

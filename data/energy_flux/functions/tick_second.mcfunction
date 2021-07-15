@@ -1,7 +1,7 @@
 #Timer
-	scoreboard players set Second EF_Timer 0
-	scoreboard players add Minute EF_Timer 1
-	execute if score Minute EF_Timer matches 60.. run function energy_flux:tick_minute
+	scoreboard players set Second EF_Data 0
+	scoreboard players add Minute EF_Data 1
+	execute if score Minute EF_Data matches 60.. run function energy_flux:tick_minute
 
 #Transfert	
 	tag @e[type=minecraft:glow_item_frame,tag=EF_CanSend] add EF_WillSend
