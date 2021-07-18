@@ -3,7 +3,7 @@ tag @s remove EF_WillSend
     #Initialize
         tag @s add EF_Connected
         tag @s add EF_PreviousChecked
-        scoreboard players set @s EF_MaxSpeed -1
+        scoreboard players set MaxSpeed EF_MaxSpeed -1
     #Check if there are devices plugged directly
         execute as @e[type=minecraft:glow_item_frame,tag=!EF_Connected,tag=EF_CanReceive,tag=!EF_Wire,distance=..1.1] at @s run function energy_flux:send/found/receiver
 
@@ -11,7 +11,7 @@ tag @s remove EF_WillSend
         function energy_flux:send/checkspeeds/1
 
     #Start checking connectivity
-        scoreboard players operation @s EF_MaxSpeed = @e[type=minecraft:glow_item_frame,tag=EF_Faster] EF_Watt
+        scoreboard players operation MaxSpeed EF_MaxSpeed = @e[type=minecraft:glow_item_frame,tag=EF_Faster] EF_Watt
         execute as @e[type=minecraft:glow_item_frame,tag=!EF_Connected,tag=EF_Wire,tag=EF_Faster] at @s run function energy_flux:send/found/samewire
 
     #Ram clear
