@@ -6,7 +6,7 @@ scoreboard objectives add EF_Versions dummy
 scoreboard objectives add EF_EnergyStorage dummy
 scoreboard objectives add EF_MaxSpeed dummy
 
-scoreboard players set EnergyFlux EF_Versions 1012
+scoreboard players set EnergyFlux EF_Versions 1013
 scoreboard players set GameVersion EF_Versions 10
 function energy_flux:gameversion
 
