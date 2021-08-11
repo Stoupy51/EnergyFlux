@@ -1,6 +1,6 @@
 #Select a base Model Data depends on Wire
     execute store result score Model EF_Data run data get entity @s Item.tag.CustomModelData
-    scoreboard players set 100 EF_Data
+    scoreboard players set 100 EF_Data 100
     scoreboard players operation Model EF_Data /= 100 EF_Data
     scoreboard players operation Model EF_Data *= 100 EF_Data
 
@@ -14,4 +14,3 @@
 
 #Update CustomModelData
     execute store result entity @s Item.tag.CustomModelData int 1 run scoreboard players get Model EF_Data
-    scoreboard players reset Model EF_Data
