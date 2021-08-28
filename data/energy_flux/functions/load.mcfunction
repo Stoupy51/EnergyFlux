@@ -1,7 +1,7 @@
 scoreboard objectives add EF_Data dummy
 scoreboard objectives add EF_Temp dummy
-scoreboard objectives add EF_Joule dummy
-scoreboard objectives add EF_Watt dummy
+scoreboard objectives add EF_kJ dummy
+scoreboard objectives add EF_kW dummy
 scoreboard objectives add EF_Versions dummy
 scoreboard objectives add EF_EnergyStorage dummy
 scoreboard objectives add EF_MaxSpeed dummy

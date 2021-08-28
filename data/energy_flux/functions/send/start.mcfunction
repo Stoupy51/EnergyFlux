@@ -18,8 +18,8 @@ tag @s remove EF_WillSend
         tag @s remove EF_Connected
 
 #SplitEnergy
-    execute if score @s EF_Joule matches 1.. run function energy_flux:send/split
-    execute if score @s[tag=!EF_CanReceive] EF_Joule matches 1.. run function energy_flux:send/split
+    execute if score @s EF_kJ matches 1.. run function energy_flux:send/split
+    execute if score @s[tag=!EF_CanReceive] EF_kJ matches 1.. run function energy_flux:send/split
 
 #Ram Clear
     tag @e[type=minecraft:glow_item_frame,tag=EF_Connected] remove EF_Connected

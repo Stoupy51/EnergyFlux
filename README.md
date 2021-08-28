@@ -20,17 +20,17 @@ Here is a tutorial to "how to implement" :
  
   For a wire : "Tags:["EF_Use","EF_Wire"]"
 - Machines need also scores, there are 3 :
-  - "EF_Watt", transfert speed for wires BUT generation or energy consumption.
+  - "EF_kW", transfert speed for wires BUT generation or energy consumption.
   - "EF_EnergyStorage", max amount of energy
-  - "EF_Joule", current energy stored (Need to be 0 by default, not null)
+  - "EF_kJ", current energy stored (Need to be 0 by default, not null)
  
-  For example, a generator can have EF_Watt=10, EF_Joule=0, EF_EnergyStorage=800
+  For example, a generator can have EF_kW=10, EF_kJ=0, EF_EnergyStorage=800
  
-  For an energy consummer : EF_Watt=10, EF_Joule=0, EF_EnergyStorage=800
+  For an energy consummer : EF_kW=10, EF_kJ=0, EF_EnergyStorage=800
  
-  For a battery : EF_Joule=0, EF_EnergyStorage=20000
+  For a battery : EF_kJ=0, EF_EnergyStorage=20000
  
-  For a wire : EF_Watt=20
+  For a wire : EF_kW=20
 
 
 Also, there is an example of Datapack that use the Energy Flux API : https://github.com/Stoupy51/SimplEnergy

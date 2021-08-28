@@ -2,7 +2,7 @@
     function energy_flux:send/checkspeeds/1
 
 #Start checking connectivity
-    scoreboard players operation MaxSpeed EF_MaxSpeed = @e[type=minecraft:glow_item_frame,tag=EF_Faster] EF_Watt
+    scoreboard players operation MaxSpeed EF_MaxSpeed = @e[type=minecraft:glow_item_frame,tag=EF_Faster] EF_kW
     execute as @e[type=minecraft:glow_item_frame,tag=!EF_Connected,tag=EF_Wire,tag=EF_Faster] at @s run function energy_flux:send/found/samewire
 
 #Loop if there is remaining connections
