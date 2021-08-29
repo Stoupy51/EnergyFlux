@@ -21,14 +21,14 @@ Here is a tutorial to "how to implement" :
   For a wire : "Tags:["EF_Use","EF_Wire"]"
 - Machines need also scores, there are 3 :
   - "EF_kW", transfert speed for wires BUT generation or energy consumption.
-  - "EF_EnergyStorage", max amount of energy
+  - "EF_kJmax", max amount of energy
   - "EF_kJ", current energy stored (Need to be 0 by default, not null)
  
-  For example, a generator can have EF_kW=10, EF_kJ=0, EF_EnergyStorage=800
+  For example, a generator can have EF_kW=10, EF_kJ=0, EF_kJmax=800
  
-  For an energy consummer : EF_kW=10, EF_kJ=0, EF_EnergyStorage=800
+  For an energy consummer : EF_kW=10, EF_kJ=0, EF_kJmax=800
  
-  For a battery : EF_kJ=0, EF_EnergyStorage=20000
+  For a battery : EF_kJ=0, EF_kJmax=20000
  
   For a wire : EF_kW=20
 

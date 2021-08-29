@@ -3,7 +3,7 @@ scoreboard objectives add EF_Temp dummy
 scoreboard objectives add EF_kJ dummy
 scoreboard objectives add EF_kW dummy
 scoreboard objectives add EF_Versions dummy
-scoreboard objectives add EF_EnergyStorage dummy
+scoreboard objectives add EF_kJmax dummy
 scoreboard objectives add EF_MaxSpeed dummy
 
 scoreboard players set EnergyFlux EF_Versions 1013
