@@ -4,6 +4,6 @@
 	execute if score Minute EF_Data matches 60.. run function energy_flux:tick_minute
 
 #Transfert	
-	tag @e[type=minecraft:glow_item_frame,tag=EF_CanSend] add EF_WillSend
-	tag @e[type=minecraft:glow_item_frame,tag=EF_HasReceived] remove EF_HasReceived
-	execute as @e[type=minecraft:glow_item_frame,tag=EF_WillSend,tag=EF_Use,tag=!EF_CanReceive,scores={EF_kJ=1..},sort=random] at @s run function energy_flux:send/start
+	tag @e[type=glow_item_frame,tag=EF_CanSend] add EF_WillSend
+	tag @e[type=glow_item_frame,tag=EF_HasReceived] remove EF_HasReceived
+	execute as @e[type=glow_item_frame,tag=EF_WillSend,tag=EF_Use,tag=!EF_CanReceive,scores={EF_kJ=1..},sort=random] at @s run function energy_flux:send/start
