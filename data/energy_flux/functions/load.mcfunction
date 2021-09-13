@@ -5,6 +5,7 @@ scoreboard objectives add EF_kW dummy
 scoreboard objectives add EF_Versions dummy
 scoreboard objectives add EF_kJmax dummy
 scoreboard objectives add EF_MaxSpeed dummy
+scoreboard players set Second EF_Data 5
 
 scoreboard players set EnergyFlux EF_Versions 1013
 scoreboard players set GameVersion EF_Versions 10
