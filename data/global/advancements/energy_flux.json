@@ -1,0 +1,18 @@
+{
+	"display": {
+		"title": "Energy Flux",
+		"description": "v1.1.5",
+		"icon": {
+			"item": "minecraft:glowstone"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"frame": "goal"
+    },
+    "parent": "global:stoupy51",
+	"criteria": {
+        "always": {
+			"trigger": "minecraft:tick"
+		}
+    }
+}
