@@ -3,7 +3,7 @@
 		"title": "Energy Flux",
 		"description": "v1.1.5",
 		"icon": {
-			"item": "minecraft:glowstone"
+			"item": "minecraft:glowstone_dust"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,
