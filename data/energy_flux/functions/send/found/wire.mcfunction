@@ -1,7 +1,7 @@
 tag @s add EF_Connected
 tag @s remove EF_Faster
 #Check if there are devices plugged directly
-	execute as @e[type=#energy_flux:entities,tag=!EF_Connected,tag=EF_CanReceive,tag=!EF_Wire,distance=..1.1] at @s run function energy_flux:send/found/receiver
+	execute as @e[type=#energy_flux:entities,tag=!EF_Connected,tag=!EF_Wire,distance=..1.1] at @s run function energy_flux:send/found/device
 
 #Check if there are wires with same transfert speed
 	execute as @e[type=#energy_flux:entities,tag=!EF_Connected,tag=EF_Wire,distance=..1.1] if score @s EF_kW >= MaxSpeed EF_MaxSpeed at @s run function energy_flux:send/found/samewire

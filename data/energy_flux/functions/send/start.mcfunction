@@ -5,9 +5,10 @@ tag @s remove EF_WillSend
 		tag @s add EF_PreviousChecked
 		scoreboard players set MaxSpeed EF_MaxSpeed -1
 	#Check if there are devices plugged directly
-		execute as @e[type=#energy_flux:entities,tag=!EF_Connected,tag=EF_CanReceive,tag=!EF_Wire,distance=..1.1] at @s run function energy_flux:send/found/receiver
+		execute as @e[type=#energy_flux:entities,tag=!EF_Connected,tag=EF_CanReceive,tag=!EF_Wire,distance=..1.1] at @s run function energy_flux:send/found/device
 
 	#Check the highest transfert speed of wires plugged to start checking connectivity
+		scoreboard players set SenderCount EF_Temp 1
 		function energy_flux:send/checking
 
 	#Ram clear
