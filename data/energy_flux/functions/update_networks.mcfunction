@@ -1,5 +1,5 @@
 #Timer
-	scoreboard players set 10Seconds EF_Data 0
+	scoreboard players set 20Seconds EF_Data 0
 
 #Create Networks
 	scoreboard players reset * EF_MachineID

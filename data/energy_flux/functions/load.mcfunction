@@ -10,7 +10,7 @@ scoreboard objectives add EF_MachineID dummy
 
 scoreboard players set Second EF_Data 5
 
-scoreboard players set EnergyFlux EF_Versions 1015
+scoreboard players set EnergyFlux EF_Versions 1020
 scoreboard players set GameVersion EF_Versions 10
 function energy_flux:gameversion
 
