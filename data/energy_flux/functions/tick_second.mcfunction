@@ -1,9 +1,12 @@
 #Timer
 	scoreboard players set Second EF_Data 0
+	scoreboard players add 10Seconds EF_Data 1
 	scoreboard players add Minute EF_Data 1
+	execute if score 10Seconds EF_Data matches 10.. run function energy_flux:update_networks
 	execute if score Minute EF_Data matches 60.. run function energy_flux:tick_minute
 
-#Transfert	
-	tag @e[type=#energy_flux:entities,tag=EF_CanSend] add EF_WillSend
-	tag @e[type=#energy_flux:entities,tag=EF_HasReceived] remove EF_HasReceived
-	execute as @e[type=#energy_flux:entities,tag=EF_WillSend,tag=EF_Use,tag=!EF_CanReceive,scores={EF_kJ=1..},sort=random] at @s run function energy_flux:send/start
+#Check if we need to update networks now
+	scoreboard players set UpdateNetwork EF_MachineID 0
+	execute as @e[type=#energy_flux:entities,tag=EF_Use,tag=EF_CanSend,tag=!EF_Wire] run scoreboard players add UpdateNetwork EF_MachineID 1
+	execute unless score SenderCount EF_MachineID = UpdateNetwork EF_MachineID run function energy_flux:update_networks
+
