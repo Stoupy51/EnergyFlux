@@ -7,7 +7,7 @@ scoreboard players add NextSender EF_MachineID 1
 		data modify storage energy_flux:networks Receivers set value []
 		scoreboard players set ReceiverCountInNetwork EF_Temp 0
 	#Check if there are devices plugged directly
-		execute as @e[type=#energy_flux:entities,tag=!EF_Connected,tag=EF_CanReceive,tag=!EF_Wire,distance=..1.1] at @s run function energy_flux:network/found/device
+		execute as @e[type=#energy_flux:devices,tag=!EF_Connected,tag=EF_CanReceive,tag=!EF_Wire,distance=..1.1] at @s run function energy_flux:network/found/device
 
 	#Check the highest transfert speed of wires plugged to start checking connectivity
 		scoreboard players set SenderCountInNetwork EF_Temp 1
@@ -28,6 +28,6 @@ scoreboard players add NextSender EF_MachineID 1
 	scoreboard players reset * EF_MaxSpeed
 
 #Continue if there are Senders remaining
-	execute if score SenderChecked EF_MachineID < SenderCount EF_MachineID as @e[type=#energy_flux:entities,tag=EF_Use,tag=EF_CanSend] if score @s EF_MachineID = NextSender EF_MachineID at @s run function energy_flux:network/start
+	execute if score SenderChecked EF_MachineID < SenderCount EF_MachineID as @e[type=#energy_flux:devices,tag=EF_Use,tag=EF_CanSend] if score @s EF_MachineID = NextSender EF_MachineID at @s run function energy_flux:network/start
 
 #/tellraw @a ["",{"text":"SenderCount : "},{"score":{"name":"SenderCount","objective":"EF_MachineID"}},{"text":"\nSenderChecked : "},{"score":{"name":"SenderChecked","objective":"EF_MachineID"}},{"text":"\nNextSender : "},{"score":{"name":"NextSender","objective":"EF_MachineID"}}]

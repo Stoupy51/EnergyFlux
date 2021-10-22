@@ -1,5 +1,6 @@
 {
 	"values": [
-	"minecraft:glow_item_frame"
+	"#energy_flux:devices",
+	"#energy_flux:wires"
 	]
 }

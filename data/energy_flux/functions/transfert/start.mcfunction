@@ -14,4 +14,4 @@ scoreboard players operation @s EF_kJ -= RemoveAmount EF_Temp
 data remove storage energy_flux:networks NetworkTemp[0]
 scoreboard players add SelectedMachineID EF_Temp 1
 
-execute if data storage energy_flux:networks NetworkTemp[0] as @e[type=#energy_flux:entities,tag=EF_CanSend,tag=EF_Use] if score @s EF_MachineID = SelectedMachineID EF_Temp run function energy_flux:transfert/start
+execute if data storage energy_flux:networks NetworkTemp[0] as @e[type=#energy_flux:devices,tag=EF_CanSend,tag=EF_Use] if score @s EF_MachineID = SelectedMachineID EF_Temp run function energy_flux:transfert/start
