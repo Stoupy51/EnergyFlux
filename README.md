@@ -33,7 +33,7 @@ Here is a tutorial to "how to implement" :
   For a wire : EF_kW=20
 
 
-Also, there is an example of Datapack that use the Energy Flux API : https://github.com/Stoupy51/SimplEnergy
+Also, there is an example of Datapack that use the Energy Flux : https://github.com/Stoupy51/SimplEnergy
 You can copy it to get a good start if you want to add your customs items using energy.
 I recommend you to download SimplEnergy and work with Energy Flux too.
 
