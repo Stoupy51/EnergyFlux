@@ -1,13 +1,13 @@
-# Energy Flux - Minecraft API
+# Energy Flux
 [Don't forget to join the Discord if you are a User or a Creator of Datapacks : https://discord.gg/a2yX6GD4J7]
 
-This Datapack is an API to use if you want to create Industrial Datapacks.
+This Datapack is an Energy Manager to use if you want to create Industrial Datapacks.
 It will create the energy system and will do the transferts for you.
 
 Here is a tutorial to "how to implement" :
 - 1 Machine = 1 Glow Item Frame, 1 Wire = 1 Glow Item Frame
   They can have multiples tags :
-  - "EF_Use" (Always Required) to know what entities use the API
+  - "EF_Use" (Always Required) to know what entities use Energy Flux
   - "EF_CanReceive", if this machine can receive Energy
   - "EF_CanSend", if this machine can send Energy
   - "EF_Wire", if this is a wire
