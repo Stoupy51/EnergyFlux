@@ -1,7 +1,7 @@
 {
 	"display": {
 		"title": "Energy Flux",
-		"description": "v1.3.0",
+		"description": "v1.3.1",
 		"icon": {
 			"item": "minecraft:glowstone_dust"
 		},
